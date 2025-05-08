@@ -3,12 +3,12 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build"
-      }
+      "use": "@vercel/static-build"
     }
   ],
+  "scripts": {
+    "build": "react-scripts build"
+  },
   "routes": [
     {
       "src": "/(.*)",
