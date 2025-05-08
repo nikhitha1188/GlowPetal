@@ -3,16 +3,16 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build"
+      "use": "@vercel/next"
     }
   ],
-  "scripts": {
-    "build": "react-scripts build"
-  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
